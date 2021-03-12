@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import Order from "./Order";
 import {fakeOrders} from "../data/fakeOrders";
 
