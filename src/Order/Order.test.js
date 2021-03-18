@@ -29,20 +29,6 @@ describe('Order.js', () => {
     expect(result).toBeNull()
   });
 
-  // it('getItems items not empty massive', () => {
-  //   const props = {
-  //     order: fakeOrders[0]
-  //   }
-  //   const order = new Order(props);
-  //   const result = order.getItems()
-  //   expect(result).toEqual(fakeOrders[0].items.map((item, index) => (
-  //       <div
-  //           key={index}
-  //           className='Order-item'
-  //       >
-  //         {item}
-  //       </div>)));
-  // });
 
   it('test render', () => {
     const props = {
@@ -57,9 +43,9 @@ describe('Order.js', () => {
     const props = {
       order: null
     }
-    // const order = new Order(props);
-    const result = shallow(<Order {...props}/>);
-    expect(result).toMatchSnapshot();
+    const order = new Order(props);
+    // const result = shallow(<Order {...props}/>);
+    expect(order.render()).toBeNull();
   });
 
   it('test render with null fields in order', () => {

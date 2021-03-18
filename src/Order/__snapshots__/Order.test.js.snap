@@ -42,5 +42,3 @@ exports[`Order.js test render 1`] = `
   </div>
 </div>
 `;
-
-exports[`Order.js test render with null 1`] = `""`;
